@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    background-color: #121820;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 50%;
+    background-color: #1F2937;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text-highlight {
+    display: block;
+    color: #4ADF86;
+}
+
+button {
+    display: block;
+    color: white;
+    padding: 10px;
+    background: #4ADF86;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #55fc98;
+}
+
+.passwords {
+    border-top: 1px solid #2F3E53;
+    display: flex;
+    padding-top: 20px;
+}
+
+.pw-display {
+    display: inline-block;
+    background-color: #273549;
+    margin: 5px 10px;
+    width: 50%;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #55F991
+}
+
