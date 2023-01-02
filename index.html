@@ -1,18 +1,29 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Karla:wght@800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <main>
-        <h1>Generate a <span class="text-highlight">random password</span></h1>
-        <h2>Never use an insecure password again</h2>
-        <button class="generate-pw-btn" onclick="getPassword()">Generate passwords</button>
-        <div class="passwords">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Karla:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Generate a <span class="text-highlight">random password</span></h1>
+      <h2>Never use an insecure password again</h2>
+      <button class="generate-pw-btn" onclick="getPassword()">
+        Generate passwords
+      </button>
+      <div class="passwords">
         <div id="password1" class="pw-display"></div>
         <div id="password2" class="pw-display"></div>
-        </div>
-        </main>
-        <script src="index.js"></script>
-    </body>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>
