@@ -3,34 +3,27 @@ const characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
 
 let pwOneDisplay = document.getElementById("password1")
 let pwTwoDisplay = document.getElementById("password2")
-let firstPassword = []
-let secondPassword = []
 
-function getPassword() {
+
+function getPassword(){
+    let password = ""
+    for(let i = 0 ; i < 16; i++){
+        let randChar = characters[getRandomNum()]
+        password += randChar
+    }
+    return password
+}
+
+function renderPasswords(){
     reset()
-    getFirstPw()
-    getSecondPw()
-    pwOneDisplay.textContent = firstPassword.join('')
-    pwTwoDisplay.textContent = secondPassword.join('')
+    pwOneDisplay.textContent = getPassword()
+    pwTwoDisplay.textContent = getPassword()
+  
 }
 
 function reset() {
-    firstPassword = []
-    secondPassword = []
-}
-
-function getFirstPw() {
-    for (let i = 0; i < 16; i++) {
-        let randPassword = characters[getRandomNum()]
-        firstPassword.push(randPassword)
-    }
-}
-
-function getSecondPw() {
-    for (let i = 0; i < 15; i++) {
-        let randPassword = characters[getRandomNum()]
-        secondPassword.push(randPassword)
-    }
+    pwOneDisplay.textContent = ""
+    pwTwoDisplay.textContent = ""
 }
 
 function getRandomNum() {
