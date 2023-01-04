@@ -27,7 +27,7 @@ function reset() {
 }
 
 function getRandomNum() {
-    return Math.floor(Math.random() * characters.length) + 1
+    return Math.floor(Math.random() * characters.length)
 }
 
 
