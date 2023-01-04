@@ -2,7 +2,7 @@
 
 The object is to get a hand with a value as close to 21 as possible without going over.
 
-**Link to project:**
+**Link to project:** https://password-generator-brianbud.netlify.app/
 
 ![2 random passwords generated when clicking on button](./passwordGenerator.gif)
 
